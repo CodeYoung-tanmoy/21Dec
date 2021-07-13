@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: blackadder itc;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #a,
+        #d {
+            height: 50px;
+            width: 350px;
+            background-color: blue;
+            color: yellow;
+            border: 2px solid white;
+            border-radius: 7px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            font-family: georgia;
+        }
+
+        #b {
+            height: 50px;
+            width: 400px;
+            background-color: grey;
+            color: yellow;
+            font-size: 25px;
+            font-family: calibri;
+            border: 2px solid white;
+            border-radius: 7px;
+            margin-bottom: 10px;
+        }
+
+        #c {
+            padding: 12px 30px 12px 30px;
+            background-color: orange;
+            color: indigo;
+            font-weight: bold;
+            font-size: 25px;
+            font-family: cursive;
+            border-radius: 10px;
+            border: 2px solid gold;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1. Name of the student
+        2. Grade
+        3. Parents name
+        4. Mobile Number
+        5. Email Id
+        6. Country
+        7. Course
+     -->
+    <h1>Register Here</h1>
+    <form>
+        <input type="text" placeholder="Name of the Student" id="a"> <br>
+        <input type="number" placeholder="Grade" id="a"> <br>
+        <input type="text" placeholder="Parent's Name" id="d"> <br>
+        <input type="number" placeholder="Mobile Number" id="a"> <br>
+        <input type="email" placeholder="Enter Email-Id" id="a"> <br>
+        <input type="text" placeholder="Country's Name" id="a"> <br>
+        <select id="b">
+            <option>Web Development</option>
+            <option>Python</option>
+            <option>Scratch</option>
+            <option>Java</option>
+        </select> <br>
+
+        <input type="submit" value="SUBMIT" id="c" onclick="showName()">
+        <input type="reset" value="CLEAR FORM" id="c">
+    </form>
+    <script>
+        function showName() {
+            var x = document.getElementById("d").value
+            alert("Thank you " + x + ". You have succesfully registered.")
+        }
+    </script>
+</body>
+
+</html>

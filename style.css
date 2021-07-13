@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Beginning of navigation bar */
+.topnav a{
+    text-decoration: none;
+    color: wheat;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 23px;
+    font-family: calibri;
+}
+.topnav{
+    background-color: black;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+/* End of navigation bar */
+
+/* Beginning of Home */
+
+    #home{
+        margin-top: 50px;
+        background-color: #FAD703;
+    }
+    #home p{
+        font-size: 28px;
+        font-family: blackadder itc;
+        background-color: blueviolet;
+        color: white;
+        padding: 60px 100px 60px 100px;
+        border-radius: 20px;
+        transition: 0.8s;
+    }
+    #home p:hover{
+        box-shadow: 10px 10px 10px black;
+        border-radius: 40px;
+    }
+    #home img{
+        height: 550px;
+        width: 550px;
+        transition: 0.6s;
+    }
+    #home img:hover{
+        height: 560px;
+        width: 560px;
+    }
+    #home table td{
+        padding: 30px;
+    }
+    #home h1{
+        font-size: 90px;
+        font-family: calibri;
+        color: blueviolet;
+        position: absolute;
+        left: -400px;
+        top: 50px;
+        animation-name: welcome;
+        animation-duration: 6s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+    }
+    @keyframes welcome{
+        0%{
+            left: -400px;
+        }
+        50%{
+            letter-spacing: 35px;
+        }
+        70%{
+            left: 100px;
+            opacity: 1;
+        }
+        100%{
+            left: 100px;
+            opacity: 0;
+        }
+    }
+    #home button{
+        padding: 15px 70px 15px 70px;
+        font-size: 25px;
+        font-family: calibri;
+        background-color: rgba(255, 4, 4, 0.3);
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 8px;
+        margin-top: -150px;
+        margin-bottom: 80px;
+        margin-left: 600px;
+        transition: ease-in 0.3s;
+        box-shadow: 0px 0px 6px black;
+        cursor: pointer;
+    }
+    #home button:hover{
+        background-color: rgb(255, 4, 4);
+        border: 2px solid black;
+        box-shadow: 0px 0px 12px black;
+    }
+/* End of Home */
+
+/* Beginning of Course Section */
+    #course{
+        background-color: rgb(245, 144, 12);
+        margin-top: -100px;
+    }
+
+    #course table{
+        margin-top: -80px;
+    }
+    #course h2{
+        font-size: 65px;
+        font-family: blackadder itc;
+        color: rgb(3, 22, 56);
+        text-align: center;
+    }
+
+    #course p{
+        font-size: 18px;
+        font-family: georgia;
+        color: darkblue;
+        text-align: center;
+    }
+    
+    #course td{
+        text-align: center;
+    }
+
+    #course img{
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        transition: 0.5s;
+        border: 3px solid black;
+    }
+    #course img:hover{
+        box-shadow: 10px 10px 10px black;
+        border: 3px solid white;
+    }
+    #course button{
+        padding: 10px 35px 10px 35px;
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        font-size: 25px;
+        font-family: calibri;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+    #course button:hover{
+        background-color: darkmagenta;
+        border: 2px solid white;
+    }
+    #course h1{
+        font-size: 80px;
+        font-family: broadway;
+        color: darkgreen;
+        text-align: center;
+    }
+/* End of Course Section */
+
+/* Beginning of About Section */
+
+    #about{
+        background-color: rgb(192, 109, 233);
+        margin-top: -80px;
+    }
+    #about h1{
+        font-size: 85px;
+        font-family: blackadder itc;
+        color: darkred;
+        text-align: center;
+    }
+
+    #about p{
+        font-size: 20px;
+        font-family: cursive;
+        margin: 10px 100px 10px 100px;
+        padding: 40px 70px 40px 70px;
+    }
+    #about h5{
+        font-size: 60px;
+        font-family: broadway;
+        color: cornsilk;
+        text-align: center;
+    }
+
+    #about h2{
+        font-size: 40px;
+        font-family: calibri;
+        color: darkblue;
+    }
+    #about h3{
+        font-size: 35px;
+        font-family: calibri;
+        color: darkred;
+    }
+    #about h4{
+        font-size: 25px;
+        font-family: calibri;
+        color: darkslategrey;
+    }
+    #about td{
+        padding: 20px 90px 20px 90px;
+        text-align: center;
+    }
+    #about img{
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px black;
+    }
+
+/* End of About Section */
+
+/* Beginning of Contact section */
+
+    #contact{
+        background-color: black;
+        margin-top: -80px;
+    }
+    #contact h1{
+        font-size: 70px;
+        font-family: blackadder itc;
+        text-align: center;
+        color: brown;
+    }
+
+    #contact i{
+        font-size: 40px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    #contact span,#contact p{
+        font-size: 27px;
+        font-family: georgia;
+        color: cornsilk;
+        margin-left: 20px;
+    }
+    #contact td{
+        padding: 20px 200px 20px 200px;
+    }
+
+/* End of contact section */
+/* Beginning of footer */
+
+    footer{
+        font-size: 20px;
+        background-color: darkkhaki;
+        color: rgb(1, 1, 44);
+        font-family: georgia;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+/* footer{
+
+} */
+/* End of footer */
